@@ -2,6 +2,7 @@ class Solution {
 public:
     void nextPermutation(vector<int>& nums) {
         int n = nums.size(), k, l;
+        // Still dont know why it the k is initializing with n - 2
     	for (k = n - 2; k >= 0; k--) {
             if (nums[k] < nums[k + 1]) {
                 break;
